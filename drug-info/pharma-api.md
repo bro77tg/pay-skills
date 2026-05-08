@@ -1,16 +1,16 @@
 ---
 fqn: drug-info/pharma-api
 name: Pharma Drug Info API
-description: Get drug information from openFDA. Search by brand name or active ingredient. Returns purpose, warnings, dosage, manufacturer.
+description: "Get drug information from openFDA. Search by brand name or active ingredient. Returns purpose, warnings, dosage, manufacturer."
 category: data
 base_url: http://api.moretrade.ru
 endpoints:
   - path: v1/drug-info
     method: POST
     price: 0.001
-    description: Search drug by name. Send {"drug_name": "ibuprofen"} in body.
+    description: "Search drug by name. Send drug_name in body."
   - path: v1/drug-info
     method: GET
     price: 0.001
-    description: Search drug by name. Use ?drug_name=ibuprofen
+    description: "Search drug by name. Use drug_name query parameter."
 ---
